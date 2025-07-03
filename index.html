@@ -16,12 +16,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <!-- Lottie Animation -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <body>
 
     <!-- Header and Navbar Starts -->
-    <header id="main-header">
+    <header id="main-header" data-aos="fade-down" data-aos-duration="1000">
+        <div class="logo">
+            <lottie-player src="img\animation nav.json" background="transparent" speed="1"
+                style="width: 80px; height: auto;" loop autoplay>
+            </lottie-player>
+        </div>
         <nav class="navbar" id="navbar">
             <a href="#" class="nav-link">Home</a>
             <a href="#" class="nav-link">About</a>
