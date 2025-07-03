@@ -414,7 +414,7 @@ header.scrolled {
 }
 
 .section-title1 span {
-  color: #ff873c;
+  color: #f77b2e;
 }
 
 .skills-grid {
@@ -431,7 +431,7 @@ header.scrolled {
 .skill-card3,
 .skill-card4 {
   text-align: left;
-  background: linear-gradient(120deg, #ffffff, rgb(107, 128, 157));
+  background: linear-gradient(135deg, #ffffff, #e4f0fb);
   border-radius: 12px;
   padding: 20px 25px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
@@ -500,6 +500,15 @@ header.scrolled {
   font-size: 20px;
   margin-right: 10px;
   color: #ff873c;
+}
+
+.skill-card1 i:hover,
+.skill-card2 i:hover,
+.skill-card3 i:hover,
+.skill-card4 i:hover {
+  color: #ffa263;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
 }
 
 .skill-card1 ul li:hover,
