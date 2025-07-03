@@ -1,6 +1,6 @@
 // Background Slideshow for Hero
 const hero = document.getElementById("hero");
-const heroImages = ["img/img2.jpg", "img/img1.jpg"];
+const heroImages = ["img/img3.jpg", "img/img4.jpg"];
 
 let heroIndex = 0;
 
