@@ -1,6 +1,11 @@
 // Background Slideshow for Hero
 const hero = document.getElementById("hero");
-const heroImages = ["img/img6.jpg", "img/img4.jpg", "img/img7.png", "img/img3.jpg"];
+const heroImages = [
+  "img/img6.jpg",
+  "img/img4.jpg",
+  "img/img7.png",
+  "img/img3.jpg",
+];
 
 let heroIndex = 0;
 
@@ -100,4 +105,11 @@ document.addEventListener("click", (e) => {
     hamburger.classList.remove("active");
     navbar.classList.remove("active");
   }
+});
+
+// Change header style on scroll
+window.addEventListener("scroll", function () {
+  document
+    .querySelector("header")
+    .classList.toggle("scrolled", window.scrollY > 10);
 });
