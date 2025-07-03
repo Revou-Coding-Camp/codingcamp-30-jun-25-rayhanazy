@@ -21,6 +21,83 @@ function changeHeroBackground() {
 changeHeroBackground();
 setInterval(changeHeroBackground, 3000);
 
+// Efek ketik judul
+const heroTitle = document.getElementById("hero-title");
+const userInput = document.getElementById("username");
+const heroDesc = document.getElementById("hero-desc");
+
+const titleAfter = ", WELCOME TO MY PORTFOLIO WEBSITE";
+const descText =
+  "An Informatics Engineering student who is passionate about web development and design, I enjoy creating innovative solutions and exploring new technologies to improve user experience.";
+
+let titleIndex = 0;
+let descIndex = 0;
+
+// Fungsi update lebar box sesuai teks/placeholder
+function updateWidth() {
+  const text =
+    userInput.textContent || userInput.getAttribute("data-placeholder");
+
+  const span = document.createElement("span");
+  span.style.visibility = "hidden";
+  span.style.position = "absolute";
+  span.style.whiteSpace = "nowrap";
+  span.style.fontWeight = "bold";
+  span.style.fontSize = window.getComputedStyle(userInput).fontSize;
+  span.style.fontFamily = window.getComputedStyle(userInput).fontFamily;
+  span.textContent = text;
+
+  document.body.appendChild(span);
+  const width = span.getBoundingClientRect().width;
+  document.body.removeChild(span);
+
+  userInput.style.width = `${width + 16}px`;
+}
+
+// Fungsi efek ketik judul setelah nama
+function updateTitleWithTyping(name) {
+  if (titleIndex <= titleAfter.length) {
+    heroTitle.innerHTML =
+      `HI <span class="editable">${name}</span>` +
+      titleAfter.substring(0, titleIndex);
+    titleIndex++;
+    setTimeout(() => updateTitleWithTyping(name), 50);
+  } else {
+    heroTitle.classList.remove("typewriter");
+    heroTitle.classList.add("no-caret");
+    setTimeout(startDescTyping, 300);
+  }
+}
+
+// Fungsi efek ketik deskripsi
+function startDescTyping() {
+  if (descIndex < descText.length) {
+    heroDesc.textContent += descText.charAt(descIndex);
+    descIndex++;
+    setTimeout(startDescTyping, 25);
+  }
+}
+
+// Event: deteksi Enter dan jalankan efek
+userInput.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    const name = userInput.innerText.trim().toUpperCase();
+    if (name !== "") {
+      userInput.blur();
+      updateTitleWithTyping(name);
+    }
+  }
+});
+
+// Event: update lebar saat input/fokus/blur
+userInput.addEventListener("input", updateWidth);
+userInput.addEventListener("focus", updateWidth);
+userInput.addEventListener("blur", updateWidth);
+
+// Inisialisasi lebar saat load
+updateWidth();
+
 // Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
