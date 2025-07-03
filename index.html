@@ -486,6 +486,59 @@
             reset: true
         });
     </script>
+
+    <!-- Popup Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('contactForm');
+            const overlay = document.getElementById('popupOverlay');
+            const popup = overlay.querySelector('.popup');
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                // Ambil data input
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const message = document.getElementById('message').value;
+
+                // Tampilkan ke popup
+                document.getElementById('popupName').innerText = name;
+                document.getElementById('popupEmail').innerText = email;
+                document.getElementById('popupPhone').innerText = phone;
+                document.getElementById('popupMsg').innerText = message;
+
+                const now = new Date();
+                const timeString = now.toLocaleString();
+                document.getElementById('popupTime').innerText = timeString;
+
+                // Tampilkan popup
+                overlay.style.display = 'flex';
+                document.body.classList.add('noscroll');
+
+                // Reset form
+                form.reset();
+
+                // Tutup popup otomatis setelah 5 detik
+                setTimeout(() => {
+                    closePopup();
+                }, 5000);
+            });
+
+            window.closePopup = function () {
+                overlay.style.display = 'none';
+                document.body.classList.remove('noscroll');
+            }
+        });
+    </script>
+
+
+    <!-- AOS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
