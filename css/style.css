@@ -385,6 +385,20 @@ header {
 }
 /* About Section Ends */
 
+/* About Responsive */
+@media screen and (max-width: 768px) {
+  .about-container {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 662px) {
+  .about-container {
+    margin: 40px;
+  }
+}
+/* About Responsive Ends*/
+
 /* Skills Section */
 .skills {
   width: 100%;
@@ -497,6 +511,54 @@ header {
   transform: translateX(8px);
 }
 /* Skills Section Ends*/
+
+/* Skills Responsive */
+@media screen and (max-width: 762px) {
+  .skills {
+    height: auto;
+    padding: 60px 15px;
+    margin-top: 60px;
+  }
+
+  .section-title1 {
+    font-size: 24px;
+  }
+
+  .skills-grid {
+    padding-top: 60px;
+    gap: 20px;
+  }
+
+  .skill-card1,
+  .skill-card2,
+  .skill-card3,
+  .skill-card4 {
+    padding: 15px 20px;
+  }
+
+  .skill-card1 h3,
+  .skill-card2 h3,
+  .skill-card3 h3,
+  .skill-card4 h3 {
+    font-size: 18px;
+  }
+
+  .skill-card1 ul li,
+  .skill-card2 ul li,
+  .skill-card3 ul li,
+  .skill-card4 ul li {
+    font-size: 14px;
+  }
+
+  .skill-card1 i,
+  .skill-card2 i,
+  .skill-card3 i,
+  .skill-card4 i {
+    font-size: 18px;
+    margin-right: 8px;
+  }
+}
+/* Skills Responsive Ends*/
 
 /* Contact Section */
 .contact {
@@ -703,6 +765,119 @@ body.noscroll {
 }
 /* Popup Overlay Ends */
 
+/* Contact Responsive */
+@media screen and (max-width: 1024px) {
+  .contact {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .section-title2 {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    margin: 0 20px;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .contact-image lottie-player {
+    max-width: 100%;
+    height: auto;
+  }
+
+  form {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 762px) {
+  .contact {
+    height: auto;
+    padding: 60px 15px;
+  }
+
+  .section-title2 {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    margin: 0 20px;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .contact-image lottie-player {
+    max-width: 100%;
+    height: auto;
+  }
+
+  form {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .form-group1,
+  .form-group2,
+  .form-group3,
+  .form-group4 {
+    flex-direction: row;
+    padding: 8px;
+  }
+
+  .form-group1 i,
+  .form-group2 i,
+  .form-group3 i,
+  .form-group4 i {
+    font-size: 18px;
+    margin-right: 8px;
+  }
+
+  .form-group1 input,
+  .form-group2 input,
+  .form-group3 input,
+  .form-group4 input,
+  .form-group1 textarea,
+  .form-group2 textarea,
+  .form-group3 textarea,
+  .form-group4 textarea {
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+  .popup {
+    padding: 1.5rem 1.8rem;
+    border-radius: 16px;
+    max-width: 90%;
+  }
+
+  .popup h3 {
+    font-size: 1.2rem;
+  }
+
+  .popup p {
+    font-size: 0.95rem;
+  }
+
+  .popup .btn-close,
+  .popup button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+/* Contact Responsive Ends */
+
 /* Footer Section */
 .footer {
   padding: 40px 20px 20px 20px;
@@ -809,3 +984,82 @@ hr {
   color: orange;
 }
 /* Footer Section Ends */
+
+/* Footer Responsive Starts */
+@media (max-width: 992px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    padding: 0 20px;
+  }
+
+  .footer-box {
+    min-width: 100%;
+    max-width: 600px;
+    margin-bottom: 30px;
+  }
+
+  .footer-box h2 {
+    font-size: 22px;
+  }
+
+  .footer-box p,
+  .footer-box ul li {
+    font-size: 15.5px;
+    line-height: 1.5;
+  }
+
+  .socials {
+    margin-top: 10px;
+  }
+
+  .socials i {
+    font-size: 18px;
+    margin: 8px;
+    padding: 9px;
+  }
+
+  .footer-bottom {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+
+  .footer-box {
+    min-width: 100%;
+    max-width: 500px;
+  }
+
+  .socials i {
+    margin: 10px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-box h2 {
+    font-size: 20px;
+  }
+
+  .footer-box p,
+  .footer-box li {
+    font-size: 15px;
+  }
+
+  .socials i {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .footer-bottom {
+    font-size: 14px;
+  }
+}
+/* Footer Responsive Ends */
