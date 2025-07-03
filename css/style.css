@@ -203,3 +203,109 @@ header {
   transition: opacity 0.5s ease-in-out;
 }
 /* Hero Ends */
+
+/* About Section */
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  padding-top: 100px;
+}
+
+.section-title i {
+  margin-right: 10px;
+  color: #000;
+}
+
+.section-title span {
+  color: #0077cc;
+}
+
+.about {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 60px 0 0;
+}
+
+.about-image img {
+  width: 350px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-content {
+  max-width: 600px;
+}
+
+.about-content h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.about-content h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  margin: 10px 0;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.about-content p strong {
+  color: blue;
+  font-weight: 400;
+}
+
+.about-content .resume-btn {
+  color: white;
+}
+
+.about-content a {
+  text-decoration: none;
+  color: #000;
+}
+
+.resume-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #1700ab;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(15, 1, 163, 0.6);
+  transition: background 0.3s;
+}
+
+.resume-btn i {
+  margin-left: 5px;
+}
+
+.resume-btn:hover i {
+  transition: all 0.3s ease;
+  transform: translateX(5px);
+}
+
+.resume-btn:hover {
+  background-color: #4d33f7;
+}
+
+.lottie-animation {
+  width: clamp(200px, 50vw, 600px);
+  height: auto;
+}
+/* About Section Ends */
