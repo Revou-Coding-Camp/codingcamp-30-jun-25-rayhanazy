@@ -12,6 +12,15 @@ html {
   padding: 0;
   overflow-x: hidden;
 }
+html::-webkit-scrollbar {
+  width: 0.5rem;
+}
+html::-webkit-scrollbar-track {
+  background: rgb(245, 238, 242);
+}
+html::-webkit-scrollbar-thumb {
+  background: rgb(107, 128, 157);
+}
 body {
   margin: 0;
   padding: 0;
