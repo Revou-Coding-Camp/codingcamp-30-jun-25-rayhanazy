@@ -268,7 +268,6 @@ header.scrolled {
   text-align: center;
   color: #34495e;
   max-width: 700px;
-  margin: 20px auto 0;
   line-height: 1.6;
   min-height: 50px;
 }
@@ -767,6 +766,9 @@ body.noscroll {
   transform: scale(0.9);
   opacity: 0;
   animation: popupIn 0.4s ease forwards;
+  overflow-y: auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .popup h3 {
