@@ -93,24 +93,21 @@
         </h2>
         <div class="project-container">
             <div class="project-card">
-                <div class="project-img-wrapper">
+                <a href="https://rayhanazy.github.io/Furniture-web/" target="_blank" class="project-img-wrapper">
                     <img src="img\furniture.webp" alt="Furniture Web Preview" class="project-img" />
                     <div class="overlay-text">Lihat Detail</div>
-                </div>
+                </a>
                 <h3>Furniture Web</h3>
-                <p>Website e‑commerce sederhana bertema furniture menggunakan HTML, CSS, dan JavaScript.</p>
-                <a href="https://rayhanazy.github.io/Furniture-web/" target="_blank" class="project-link">View
-                    Project</a>
+                <p>Website e-commerce sederhana bertema furniture menggunakan HTML, CSS, dan JavaScript.</p>
             </div>
+
             <div class="project-card">
-                <div class="project-img-wrapper">
+                <a href="https://rayhanazy.github.io/Medical-Web/" target="_blank" class="project-img-wrapper">
                     <img src="img\medical.webp" alt="Medical Web Preview" class="project-img" />
                     <div class="overlay-text">Lihat Detail</div>
-                </div>
+                </a>
                 <h3>Medical Web</h3>
-                <p>Landing page website bertema layanan medis dengan tampilan modern dan responsive.</p>
-                <a href="https://rayhanazy.github.io/Medical-Web/" target="_blank" class="project-link">View
-                    Project</a>
+                <p>Landing page layanan medis dengan tampilan modern dan responsive.</p>
             </div>
         </div>
     </section>
@@ -441,6 +438,14 @@
             distance: '80px',
             duration: 1000,
             delay: 1200,
+            easing: 'ease-in-out',
+            reset: true
+        });
+        ScrollReveal().reveal('.project-card', {
+            origin: 'bottom',
+            distance: '80px',
+            duration: 1000,
+            delay: 200,
             easing: 'ease-in-out',
             reset: true
         });
