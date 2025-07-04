@@ -55,3 +55,5 @@ Saya Rayhan, mahasiswa Teknik Informatika di Universitas Krisnadwipayana. Saya m
    git clone https://github.com/rayhanazy/portfolio-website.git
    Buka index.html di browser lokal.
    Selesai! Nikmati website-nya.
+
+# ✨ Terima kasih telah mengunjungi portfolio saya!
