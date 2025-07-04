@@ -35,7 +35,7 @@
             <a href="#hero" class="nav-link">Home</a>
             <a href="#about" class="nav-link">About</a>
             <a href="#skills" class="nav-link">Skills</a>
-            <a href="#contact" class="nav-link">contact</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </nav>
 
         <!-- Hamburger Icon -->
@@ -157,12 +157,12 @@
                 <div class="form-group3">
                     <i class="fas fa-phone"></i>
                     <input type="text" id="phone" placeholder="Phone Number" name="phone" inputmode="numeric"
-                        pattern="[0-9]{10,15}" title="Masukkan hanya angka (10-15 digit)"
+                        pattern="[0-9]{10,15}" title="Enter numbers only (10-15 digits)"
                         oninput="this.value = this.value.replace(/[^0-9]/g, '')" required />
                 </div>
                 <div class="form-group4">
                     <i class="fas fa-comment-dots"></i>
-                    <input id="message" placeholder="Message" required></input>
+                    <input type="text" id="message" placeholder="Message" required></input>
                 </div>
                 <button type="submit" class="submit-btn">
                     Submit <i class="fas fa-paper-plane"></i>
@@ -293,8 +293,7 @@
             duration: 1000,
             delay: 200,
             easing: 'ease-in-out',
-            reset: true,
-            viewFactor: 0.2
+            reset: true
         });
 
         ScrollReveal().reveal('.section-title2', {
@@ -303,8 +302,7 @@
             duration: 1000,
             delay: 200,
             easing: 'ease-in-out',
-            reset: true,
-            viewFactor: 0.2
+            reset: true
         });
 
         ScrollReveal().reveal('.section-title i', {
@@ -517,10 +515,10 @@
                 // Reset form
                 form.reset();
 
-                // Tutup popup otomatis setelah 7 detik
+                // Tutup popup otomatis setelah 10 detik
                 setTimeout(() => {
                     closePopup();
-                }, 7000);
+                }, 10000);
             });
 
             window.closePopup = function () {
