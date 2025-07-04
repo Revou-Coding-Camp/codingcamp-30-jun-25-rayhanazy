@@ -520,67 +520,14 @@ header.scrolled {
 /* Skills Section Ends*/
 
 /* Skills Responsive Starts */
-/* Responsive Tech Stack Section */
-@media (max-width: 1024px) {
-  .tech-stack {
-    height: auto;
-    padding: 80px 30px;
-  }
-
+@media screen and (max-width: 768px) {
   .tech-title {
-    font-size: 28px;
-  }
-
-  .tech-grid {
-    gap: 30px;
-  }
-
-  .tech-card img {
-    width: 45px;
-    height: 45px;
-  }
-
-  .tech-card p {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 768px) {
-  .tech-stack {
-    padding: 60px 20px;
-  }
-
-  .tech-title {
-    font-size: 24px;
+    margin-bottom: 30px;
   }
 
   .tech-grid {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 20px;
-  }
-
-  .tech-card {
-    padding: 15px;
-  }
-
-  .tech-card img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .tech-card p {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .tech-title {
-    font-size: 20px;
-  }
-
-  .tech-grid {
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    gap: 15px;
   }
 
   .tech-card img {
@@ -593,6 +540,25 @@ header.scrolled {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .tech-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+  }
+
+  .tech-card {
+    padding: 12px;
+  }
+
+  .tech-card img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .tech-card p {
+    font-size: 12px;
+  }
+}
 /* Skills Responsive Ends*/
 
 /* Contact Section */
