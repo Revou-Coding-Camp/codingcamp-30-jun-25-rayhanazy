@@ -347,7 +347,7 @@ header.scrolled {
 }
 
 .about {
-  background-color: #1f1f1f;
+  background: rgb(49, 49, 49);
   position: relative;
   z-index: 1;
 }
