@@ -475,7 +475,7 @@ header.scrolled {
 
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 40px;
   max-width: 1000px;
   margin: 0 auto;
@@ -504,7 +504,8 @@ header.scrolled {
 }
 
 .tech-card p {
-  font-size: 16px;
+  font-size: clamp(12px, 1.5vw, 16px);
+  color: #c2c2c2;
   font-weight: bold;
   margin: 0;
 }
@@ -517,48 +518,40 @@ header.scrolled {
 .tech-card a:hover {
   color: #c2c2c2;
 }
+
 /* Skills Section Ends*/
 
 /* Skills Responsive Starts */
-@media screen and (max-width: 768px) {
-  .tech-title {
-    margin-bottom: 30px;
+@media (max-width: 992px) {
+  .tech-stack {
+    padding: 80px 20px;
   }
 
   .tech-grid {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 20px;
-  }
-
-  .tech-card img {
-    width: 35px;
-    height: 35px;
-  }
-
-  .tech-card p {
-    font-size: 13px;
+    gap: 40px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 768px) {
+  .tech-stack {
+    padding: 80px 20px;
+  }
   .tech-grid {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     gap: 20px;
   }
+}
 
-  .tech-card {
-    padding: 12px;
+@media (max-width: 480px) {
+  .tech-stack {
+    padding: 80px 20px;
   }
-
-  .tech-card img {
-    width: 30px;
-    height: 30px;
-  }
-
-  .tech-card p {
-    font-size: 12px;
+  .tech-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
   }
 }
+
 /* Skills Responsive Ends*/
 
 /* Contact Section */
