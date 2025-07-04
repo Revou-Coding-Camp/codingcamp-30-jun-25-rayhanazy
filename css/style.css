@@ -522,15 +522,10 @@ header.scrolled {
 /* Skills Section Ends*/
 
 /* Skills Responsive Starts */
-/* Responsive Tech Stack Section */
 @media (max-width: 1024px) {
   .tech-stack {
     height: auto;
     padding: 80px 30px;
-  }
-
-  .tech-title {
-    font-size: 28px;
   }
 
   .tech-grid {
@@ -550,10 +545,6 @@ header.scrolled {
 @media (max-width: 768px) {
   .tech-stack {
     padding: 60px 20px;
-  }
-
-  .tech-title {
-    font-size: 24px;
   }
 
   .tech-grid {
@@ -576,10 +567,6 @@ header.scrolled {
 }
 
 @media (max-width: 480px) {
-  .tech-title {
-    font-size: 20px;
-  }
-
   .tech-grid {
     grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     gap: 20px;
