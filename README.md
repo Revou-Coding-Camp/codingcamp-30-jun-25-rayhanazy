@@ -16,10 +16,13 @@ Website ini dibuat sebagai personal branding saya sebagai mahasiswa Teknik Infor
 ## 📁 Struktur Proyek
 
 ├── index.html 
+
 ├── css/
 │ └── style.css 
+
 ├── js/
 │ └── script.js 
+
 └── img/ 
 
 
@@ -37,7 +40,7 @@ Website ini dibuat sebagai personal branding saya sebagai mahasiswa Teknik Infor
 
 ## 📷 Preview
 
-![Preview Website](https://your-image-link.com) <!-- Ganti dengan link jika ada screenshot -->
+![Preview Website]([https://your-image-link.com](https://revou-coding-camp.github.io/codingcamp-30-jun-25-rayhanazy/))
 
 ## 🧠 Tentang Saya
 
@@ -56,4 +59,4 @@ Saya Rayhan, mahasiswa Teknik Informatika di Universitas Krisnadwipayana. Saya m
    Buka index.html di browser lokal.
    Selesai! Nikmati website-nya.
 
-# ✨ Terima kasih telah mengunjungi portfolio saya!
+### ✨ Terima kasih telah mengunjungi portfolio saya!
