@@ -21,6 +21,7 @@ body {
   opacity: 0;
   animation: fadeIn 1s forwards;
   overflow-x: hidden;
+  background-color: #1f1f1f;
 }
 @keyframes fadeIn {
   0% {
@@ -43,7 +44,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(46, 45, 45, 0.8);
   backdrop-filter: blur(15px);
   backdrop-filter: blur(10px);
   display: flex;
@@ -51,11 +52,11 @@ header {
   align-items: center;
   padding: 0px 100px 0px 100px;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
 }
 
 header.scrolled {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
 }
 
 /* Navbar styling */
@@ -68,7 +69,7 @@ header.scrolled {
 /* Navbar link */
 .navbar a {
   position: relative;
-  color: #1f1f1f;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
@@ -83,14 +84,14 @@ header.scrolled {
   bottom: -3px;
   width: 0;
   height: 2px;
-  background: linear-gradient(to right, #ff914d, #ffc371);
+  background: linear-gradient(to right, #ffffff, #545454);
   transition: all 0.4s ease;
   transform: translateX(-50%);
 }
 
 /* Hover efek */
 .navbar a:hover {
-  background: linear-gradient(to right, #f77b2e, #ffc371);
+  background: linear-gradient(to right, #ffffff, #545454);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -105,7 +106,7 @@ header.scrolled {
 
 /* Link aktif */
 .navbar a.active {
-  color: #fa8231;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   animation: pulseGlow 0.9s infinite alternate;
 }
@@ -214,7 +215,7 @@ header.scrolled {
 }
 
 .hero-content {
-  background: rgba(255, 255, 255, 0.7);
+  background: linear-gradient(to right, #525252, #545454);
   padding: 20px 40px;
   border-radius: 10px;
   position: relative;
@@ -225,7 +226,7 @@ header.scrolled {
 .editable {
   padding: 2px 8px;
   outline: none;
-  color: #2c3e50;
+  color: #c2c2c2;
   font-weight: bold;
   display: inline-block;
   cursor: text;
@@ -240,7 +241,7 @@ header.scrolled {
 /* Placeholder */
 .editable:empty::before {
   content: attr(data-placeholder);
-  color: #2c3e50;
+  color: #c2c2c2;
   font-weight: normal;
   pointer-events: none;
   position: absolute;
@@ -266,7 +267,7 @@ header.scrolled {
 .description {
   font-size: 1.2rem;
   text-align: center;
-  color: #34495e;
+  color: #c2c2c2;
   max-width: 700px;
   line-height: 1.6;
   min-height: 50px;
@@ -275,7 +276,7 @@ header.scrolled {
 .hero-content h1 {
   font-size: 3rem;
   font-weight: 700;
-  color: #2c3e50;
+  color: #c2c2c2;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
   margin-bottom: 15px;
   max-width: 100%;
@@ -287,7 +288,7 @@ header.scrolled {
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.6;
-  color: #333;
+  color: #c2c2c2;
 }
 
 .slider {
@@ -333,19 +334,20 @@ header.scrolled {
   text-align: center;
   font-size: 32px;
   padding-top: 100px;
+  color: #c2c2c2;
 }
 
 .section-title i {
   margin-right: 10px;
-  color: #000;
+  color: #c2c2c2;
 }
 
 .section-title span {
-  color: #0077cc;
+  color: #c2c2c2;
 }
 
 .about {
-  background-color: #ffffff;
+  background-color: #1f1f1f;
   position: relative;
   z-index: 1;
 }
@@ -362,7 +364,7 @@ header.scrolled {
   width: 350px;
   height: auto;
   border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(119, 119, 119, 0.2);
 }
 
 .about-content {
@@ -372,12 +374,13 @@ header.scrolled {
 .about-content h3 {
   font-size: 1.8rem;
   font-weight: 700;
+  color: #c2c2c2;
 }
 
 .about-content h4 {
   font-size: 1.2rem;
   font-weight: 600;
-  color: black;
+  color: #c2c2c2;
   margin-bottom: 15px;
 }
 
@@ -385,33 +388,34 @@ header.scrolled {
   margin: 10px 0;
   line-height: 1.6;
   text-align: justify;
+  color: #c2c2c2;
 }
 
 .about-content p strong {
-  color: blue;
+  color: #c2c2c2;
   font-weight: 400;
 }
 
 .about-content .resume-btn {
-  color: white;
+  color: #c2c2c2;
 }
 
 .about-content a {
   text-decoration: none;
-  color: #000;
+  color: #c2c2c2;
 }
 
 .resume-btn {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 25px;
-  background-color: #1700ab;
-  color: white;
+  background-color: #343232;
+  color: rgb(145, 145, 145);
   font-weight: 600;
   letter-spacing: 2px;
   border-radius: 8px;
   text-decoration: none;
-  box-shadow: 0 6px 15px rgba(15, 1, 163, 0.6);
+  box-shadow: 0 6px 15px rgba(29, 29, 29, 0.6);
   transition: background 0.3s;
 }
 
@@ -425,7 +429,8 @@ header.scrolled {
 }
 
 .resume-btn:hover {
-  background-color: #4d33f7;
+  
+  background: var(--bg-gradient-jet);
 }
 
 .lottie-animation {
@@ -448,179 +453,76 @@ header.scrolled {
 }
 /* About Responsive Ends*/
 
-/* Skills Section */
-.skills {
+/* SKills Section Starts */
+.tech-stack {
   width: 100%;
   height: 800px;
   padding: 100px 20px;
   margin: 100px 0 0 0;
-  background: radial-gradient(circle at top left, #fefefe, #d2e9ff);
+  background: #313131;
   text-align: center;
 }
 
-.section-title1 {
+.tech-title {
   font-size: 32px;
-  color: #222;
+  color: #c2c2c2;
+  margin-bottom: 50px;
 }
 
-.section-title1 span {
-  color: #f77b2e;
-}
-
-.skills-grid {
-  display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  max-width: 1100px;
-  margin: 0 auto;
-  padding-top: 150px;
-}
-
-.skill-card1,
-.skill-card2,
-.skill-card3,
-.skill-card4 {
-  text-align: left;
-  background: linear-gradient(135deg, #ffffff, #e4f0fb);
-  border-radius: 12px;
-  padding: 20px 25px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
-}
-
-.skill-card1:hover,
-.skill-card2:hover,
-.skill-card3:hover,
-.skill-card4:hover {
-  transform: translateY(-6px);
-}
-
-.skill-card1 h3,
-.skill-card2 h3,
-.skill-card3 h3,
-.skill-card4 h3 {
-  font-size: 20px;
-  margin-bottom: 15px;
-  color: #ff873c;
-}
-
-.skill-card1 ul,
-.skill-card2 ul,
-.skill-card3 ul,
-.skill-card4 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-}
-
-/* Animasi pulse untuk ikon */
-@keyframes pulse {
-  0%,
-  100% {
-    transform: scale(1);
-    color: #ff873c;
-  }
-  50% {
-    transform: scale(1.2);
-    color: #ff873c;
-  }
-}
-
-.pulse {
-  display: inline-block;
-  animation: pulse 2s infinite;
-}
-
-.skill-card1 ul li,
-.skill-card2 ul li,
-.skill-card3 ul li,
-.skill-card4 ul li {
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 8px;
-  cursor: default;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.skill-card1 i,
-.skill-card2 i,
-.skill-card3 i,
-.skill-card4 i {
-  font-size: 20px;
+.tech-title i {
   margin-right: 10px;
-  color: #ff873c;
+  color: #c2c2c2;
 }
 
-.skill-card1 i:hover,
-.skill-card2 i:hover,
-.skill-card3 i:hover,
-.skill-card4 i:hover {
-  color: #ffa263;
-  transform: scale(1.2);
-  transition: all 0.3s ease;
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.skill-card1 ul li:hover,
-.skill-card2 ul li:hover,
-.skill-card3 ul li:hover,
-.skill-card4 ul li:hover {
-  color: #ff873c;
-  transform: translateX(8px);
+.tech-card {
+  background: #3d3d3d;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  color: #c2c2c2;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.tech-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.tech-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.tech-card p {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+.tech-card a {
+  color: #c2c2c2;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.tech-card a:hover {
+  color: #c2c2c2;
 }
 /* Skills Section Ends*/
 
-/* Skills Responsive */
-@media screen and (max-width: 762px) {
-  .skills {
-    height: auto;
-    padding: 60px 15px;
-    margin-top: 60px;
-  }
-
-  .section-title1 {
-    font-size: 24px;
-  }
-
-  .skills-grid {
-    padding-top: 60px;
-    gap: 20px;
-  }
-
-  .skill-card1,
-  .skill-card2,
-  .skill-card3,
-  .skill-card4 {
-    padding: 15px 20px;
-  }
-
-  .skill-card1 h3,
-  .skill-card2 h3,
-  .skill-card3 h3,
-  .skill-card4 h3 {
-    font-size: 18px;
-  }
-
-  .skill-card1 ul li,
-  .skill-card2 ul li,
-  .skill-card3 ul li,
-  .skill-card4 ul li {
-    font-size: 14px;
-  }
-
-  .skill-card1 i,
-  .skill-card2 i,
-  .skill-card3 i,
-  .skill-card4 i {
-    font-size: 18px;
-    margin-right: 8px;
-  }
-}
-/* Skills Responsive Ends*/
-
 /* Contact Section */
 .contact {
-  background: #f5f5f5;
+  background: #1f1f1f;
   padding: 100px 20px;
   text-align: center;
   width: 100%;
@@ -631,10 +533,11 @@ header.scrolled {
   text-align: center;
   font-size: 32px;
   margin-bottom: 80px;
+  color: #c2c2c2;
 }
 
 .section-title2 span {
-  color: #0077cc;
+  color: #c2c2c2;
 }
 
 .contact-container {
@@ -643,7 +546,7 @@ header.scrolled {
   justify-content: center;
   gap: 40px;
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color: #3d3d3d;
   margin: 0 300px;
   border-radius: 12px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
@@ -656,7 +559,7 @@ header.scrolled {
 }
 
 form {
-  background: #fff;
+  background: #3d3d3d;
   padding: 30px;
   border-radius: 15px;
   max-width: 400px;
@@ -670,10 +573,11 @@ form {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  background: #eef3ff;
+  background: none;
   border-radius: 8px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
   padding: 10px;
+  border: 2px solid #6e6f71;
 }
 
 .form-group1 i,
@@ -682,7 +586,7 @@ form {
 .form-group4 i {
   font-size: 20px;
   margin-right: 10px;
-  color: #333;
+  color: #737373;
 }
 
 .form-group1 input,
@@ -695,6 +599,7 @@ form {
   outline: none;
   width: 100%;
   font-family: "Poppins", sans-serif;
+  color: #dedede;
 }
 
 .form-group1 textarea,
@@ -714,9 +619,9 @@ textarea {
 }
 
 .submit-btn {
-  background: #ffffff;
-  color: #5697ff;
-  border: 2px solid #5697ff;
+  background: #3d3d3d;
+  color: #737373;
+  border: 2px solid #6e6f71;
   padding: 12px 20px;
   font-weight: 600;
   border-radius: 10px;
@@ -727,9 +632,9 @@ textarea {
 }
 
 .submit-btn:hover {
-  background: #2003fc;
-  color: #ffffff;
-  border: 2px solid #2003fc;
+  background: #6e6f71;
+  color: #c2c2c2;
+  border: 2px solid #3d3d3d;
   transition: 0.3s;
 }
 /* Contact Section Ends*/
