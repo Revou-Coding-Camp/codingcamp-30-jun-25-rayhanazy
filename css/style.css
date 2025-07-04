@@ -455,7 +455,7 @@ header.scrolled {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 60px;
   max-width: 1000px;
   margin: 0 auto;
 }
