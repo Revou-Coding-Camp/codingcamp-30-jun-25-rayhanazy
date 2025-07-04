@@ -42,7 +42,7 @@ Website ini dibuat sebagai personal branding saya sebagai mahasiswa Teknik Infor
 
 ## 📷 Preview
 
-![Preview Website]((https://revou-coding-camp.github.io/codingcamp-30-jun-25-rayhanazy/))
+<a href="https://revou-coding-camp.github.io/codingcamp-30-jun-25-rayhanazy/" target="_blank">**Preview Website** 🚀</a>
 
 ## 🧠 Tentang Saya
 
