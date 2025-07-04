@@ -593,7 +593,8 @@ header.scrolled {
 .projects .section-title3 {
   font-size: 32px;
   color: #c2c2c2;
-  margin-bottom: 50px;
+  margin-bottom: 90px;
+  padding-top: 50px;
 }
 
 .projects .section-title3 i {
