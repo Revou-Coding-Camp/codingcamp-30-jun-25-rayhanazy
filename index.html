@@ -85,52 +85,74 @@
     </section>
     <!-- About Section Ends -->
 
-    <!-- Skills Section Starts -->
-    <section class="skills" id="skills">
-        <h2 class="section-title1"><i class="fas fa-tools"></i> My <span>Skills</span></h2>
-        <div class="skills-grid">
-            <div class="skill-card1">
-                <h3><i class="fas fa-brain pulse"></i> Soft Skills</h3>
-                <ul>
-                    <li><i class="fas fa-lightbulb"></i> Analysis Ability</li>
-                    <li><i class="fas fa-user-check"></i> Critical Thinking</li>
-                    <li><i class="fas fa-tools"></i> Problem Solving</li>
-                    <li><i class="fas fa-comments"></i> Communication</li>
-                    <li><i class="fas fa-users"></i> Teamwork</li>
-                </ul>
+    <!-- Skills Grid Section -->
+    <section class="tech-stack" id="skills">
+        <h2 class="tech-title">
+            <i class="fas fa-laptop-code"></i> My <span>Skills</span>
+        </h2>
+        <div class="tech-grid">
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+                <p>HTML5</p>
             </div>
-
-            <div class="skill-card2">
-                <h3><i class="fas fa-laptop-code pulse"></i> Software</h3>
-                <ul>
-                    <li><i class="fas fa-laptop"></i> Visual Studio Code</li>
-                    <li><i class="fab fa-figma"></i> Figma</li>
-                    <li><i class="fas fa-file-alt"></i> Microsoft Office</li>
-                    <li><i class="fas fa-database"></i> phpMyAdmin</li>
-                    <li><i class="fas fa-server"></i> XAMPP</li>
-                </ul>
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+                <p>CSS3</p>
             </div>
-
-            <div class="skill-card3">
-                <h3><i class="fas fa-code pulse"></i> Hard Skills</h3>
-                <ul>
-                    <li><i class="fab fa-html5"></i> HTML</li>
-                    <li><i class="fab fa-css3-alt"></i> CSS</li>
-                    <li><i class="fab fa-js-square"></i> JavaScript</li>
-                    <li><i class="fas fa-pencil-ruler"></i> UI/UX Design</li>
-                </ul>
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript" />
+                <p>JavaScript</p>
             </div>
-
-            <div class="skill-card4">
-                <h3><i class="fas fa-language pulse"></i> Languages</h3>
-                <ul>
-                    <li><i class="fas fa-flag"></i> Indonesian (Native)</li>
-                    <li><i class="fas fa-flag-usa"></i> English (Basic)</li>
-                </ul>
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                    alt="Bootstrap" />
+                <p>Bootstrap</p>
+            </div>
+            <div class="tech-card">
+                <img src="img\TailwindCSS.png" alt="TailwindCSS" />
+                <p>Tailwind</p>
+            </div>
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="ReactJS" />
+                <p>ReactJS</p>
+            </div>
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" />
+                <p>PHP</p>
+            </div>
+            <div class="tech-card">
+                <img src="https://img.icons8.com/color/48/000000/nodejs.png" alt="Python" />
+                <p>NodeJS</p>
+            </div>
+            <div class="tech-card">
+                <img src="https://img.icons8.com/ios-filled/48/1169ae/jquery.png" alt="Python" />
+                <p>JQuery</p>
+            </div>
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+                <p>Python</p>
+            </div>
+            <div class="tech-card">
+                <img src="https://img.icons8.com/color/48/000000/material-ui.png" alt="Python" />
+                <p>MaterialUI</p>
+            </div>
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+                <p>MySQL</p>
+            </div>
+            <div class="tech-card">
+                <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/000000/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png"
+                    alt="Netlify" />
+                <p>Netlify</p>
+            </div>
+            <div class="tech-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+                <p>GitHub</p>
             </div>
         </div>
     </section>
-    <!-- Skills Section Ends -->
+    <!-- Skills Grid Section Ends -->
 
     <!-- Contact Section Starts-->
     <section class="contact" id="contact">
@@ -287,7 +309,7 @@
             reset: true
         });
 
-        ScrollReveal().reveal('.section-title1', {
+        ScrollReveal().reveal('.tech-title', {
             origin: 'bottom',
             distance: '80px',
             duration: 1000,
@@ -309,6 +331,23 @@
             origin: 'left',
             distance: '80px',
             duration: 2000,
+            delay: 200,
+            easing: 'ease-in-out',
+            reset: true
+        });
+
+        ScrollReveal().reveal('.tech-title i', {
+            origin: 'left',
+            distance: '80px',
+            duration: 2000,
+            delay: 200,
+            easing: 'ease-in-out',
+            reset: true
+        });
+        ScrollReveal().reveal('.tech-card', {
+            origin: 'bottom',
+            distance: '80px',
+            duration: 1000,
             delay: 200,
             easing: 'ease-in-out',
             reset: true
